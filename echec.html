@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="echec.css" />
+    <meta charset="UTF-8">
+    <title>Jeux d'Echec</title>
+</head>
+
+<body>
+    <h3>Jeux d'Echec</h3>
+    <hr>
+    <p>
+    <h4>
+        votre déplacement
+    </h4>
+    </p>
+    <label for="depart">case départ :</label>
+    <input type="text" name="depart" id="depart" placeholder="Ecrit ici !" size="40" maxlength="10" />
+    <label for="destination">case destination :</label>
+    <input type="text" name="destination" id="destination" placeholder="Ecrit ici !" size="40" maxlength="10" />
+    <button class="favorite styled" type="button" id="boutonDeplacement">Déplacer</button>
+    <br>
+    <br>
+    <table id="table">
+        <tr>
+            <td> A </td>
+            <td> B </td>
+            <td> C </td>
+            <td> D </td>
+            <td> E </td>
+            <td> F </td>
+            <td> G </td>
+            <td> H </td>
+        </tr>
+        <tr>
+            <td id="a8" class="caseblanche">♜</td>
+            <td id="b8" class="casenoire">♞</td>
+            <td id="c8" class="caseblanche">♝</td>
+            <td id="d8" class="casenoire">♛</td>
+            <td id="e8" class="caseblanche">♚</td>
+            <td id="f8" class="casenoire">♝</td>
+            <td id="g8" class="caseblanche">♞</td>
+            <td id="h8" class="casenoire">♜</td>
+            <td id="8"> 8 </td>
+        </tr>
+        <tr>
+            <td id="a7" class="casenoire">♟</td>
+            <td id="b7" class="caseblanche">♟</td>
+            <td id="c7" class="casenoire">♟</td>
+            <td id="d7" class="caseblanche">♟</td>
+            <td id="e7" class="casenoire">♟</td>
+            <td id="f7" class="caseblanche">♟</td>
+            <td id="g7" class="casenoire">♟</td>
+            <td id="h7" class="caseblanche">♟</td>
+            <td id="7"> 7 </td>
+        </tr>
+        <tr>
+            <td id="a6" class="caseblanche"> </td>
+            <td id="b6" class="casenoire"> </td>
+            <td id="c6" class="caseblanche"> </td>
+            <td id="d6" class="casenoire"> </td>
+            <td id="e6" class="caseblanche"> </td>
+            <td id="f6" class="casenoire"> </td>
+            <td id="g6" class="caseblanche"> </td>
+            <td id="h6" class="casenoire"> </td>
+            <td id="6"> 6 </td>
+        </tr>
+        <tr>
+            <td id="a5" class="casenoire"> </td>
+            <td id="b5" class="caseblanche"> </td>
+            <td id="c5" class="casenoire"> </td>
+            <td id="d5" class="caseblanche"> </td>
+            <td id="e5" class="casenoire"> </td>
+            <td id="f5" class="caseblanche"> </td>
+            <td id="g5" class="casenoire"> </td>
+            <td id="h5" class="caseblanche"> </td>
+            <td id="5"> 5 </td>
+        </tr>
+        <tr>
+            <td id="a4" class="caseblanche"> </td>
+            <td id="b4" class="casenoire"> </td>
+            <td id="c4" class="caseblanche"> </td>
+            <td id="d4" class="casenoire"> </td>
+            <td id="e4" class="caseblanche"> </td>
+            <td id="f4" class="casenoire"> </td>
+            <td id="g4" class="caseblanche"> </td>
+            <td id="h4" class="casenoire"> </td>
+            <td id="4"> 4 </td>
+        </tr>
+        <tr>
+            <td id="a3" class="casenoire"> </td>
+            <td id="b3" class="caseblanche"> </td>
+            <td id="c3" class="casenoire"> </td>
+            <td id="d3" class="caseblanche"> </td>
+            <td id="e3" class="casenoire"> </td>
+            <td id="f3" class="caseblanche"> </td>
+            <td id="g3" class="casenoire"> </td>
+            <td id="h3" class="caseblanche"> </td>
+            <td id="3"> 3 </td>
+        </tr>
+        <tr>
+            <td id="a2" class="caseblanche">♙</td>
+            <td id="b2" class="casenoire">♙</td>
+            <td id="c2" class="caseblanche">♙</td>
+            <td id="d2" class="casenoire">♙</td>
+            <td id="e2" class="caseblanche">♙</td>
+            <td id="f2" class="casenoire">♙</td>
+            <td id="g2" class="caseblanche">♙</td>
+            <td id="h2" class="casenoire">♙</td>
+            <td id="2"> 2 </td>
+        </tr>
+        <tr>
+            <td id="a1" class="casenoire">TB</td>
+            <td id="b1" class="caseblanche">CB</td>
+            <td id="c1" class="casenoire">FB</td>
+            <td id="d1" class="caseblanche">♕</td>
+            <td id="e1" class="casenoire">RB</td>
+            <td id="f1" class="caseblanche">FB</td>
+            <td id="g1" class="casenoire">CB</td>
+            <td id="h1" class="caseblanche">TB</td>
+            <td id="1"> 1 </td>
+        </tr>
+    </table>
+    <button class="favorite styled" name="reset" type="button" id="reset">
+        reinitialisée
+    </button>
+    <br>
+    <hr>
+    <a target="_blank" href="https://fr.wikipedia.org/wiki/R%C3%A8gles_du_jeu_d%27%C3%A9checs" id="regle du jeu"><b>
+            les
+            règles du
+            jeu </b></a>
+    <br>
+    <br><a target="_blank" href="https://guns.lol/kyylaahrl"><b>mon guns</b></a> -- <a target="_blank" href="https://discord.gg/xmZUBwwkac"> <b> vaalpeach </b></a>
+    <b>
+        <p>idris (2nd SN - LP Jean Moulin, 78150 Le Chesnay)</p>
+        <p> CE SITE A ETE FAIT EN HTML 5, JAVASCRIPT et CSS
+
+        </p>
+    </b>
+
+    <script src="echec.js"></script>
+</body>
+
+</html>
