@@ -6,13 +6,15 @@ table {
 
 h3 {
     text-align: center;
-
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
 }
 
 
 body {
     background-color: rgb(77, 153, 204);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* font-size: x-large; */
     text-align: center;
 }
@@ -43,20 +45,37 @@ button {
     color: #070604;
     text-align: center;
     font-size: 14px;
-    padding: 5px;
-    width: 80px;
+    padding: 2px;
+    width: 85px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
     margin: 5px;
-  }
+}
 
-  input {
+input {
     text-align: left;
     width: 6%;
-    border-radius: 8px;  
-    padding: 5px;  
+    padding: 5px;
     color: #070604;
-    margin: 1px;
-  }
+    margin: 5px;
+    border: 2px solid #070604;
+}
+
+a {
+    text-decoration: none;
+    color: #070604;
+}
+
+a:hover {
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(6, 156, 161);
+    cursor: pointer;
+    transition: 0.5s;
+    color: #e5eaeb;
+    border-radius: 50px;
+}
