@@ -22,7 +22,7 @@ Ce projet est une implémentation d'un jeu d'échecs en HTML, CSS et JavaScript.
 
 ## Utilisation
 
-Pour démarrer le jeu, ouvrez le fichier `index.html` dans votre navigateur.
+Pour démarrer le jeu, ouvrez le fichier `echec.html` dans votre navigateur.
 
 ## Contribuer
 
